@@ -4,27 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./forum.css">
     <title>WSP1 Forum</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./forum.css">
+
 </head>
 <body>
     <!--Prototyp av index sidan för ett forum av Tim Rundström och Mario Barsum-->
-    <!--Header-->
-    <header>
-        <!--Header logo + name-->
-        <a class="header">
-            <img src="nti-logo-black.png" alt="Black NTI logo" id="logo">
-            <h1>NTI Forum</h1>
-        </a>
-        <!--Header menu-->
-        <ul id="menu">
-            <li><a>Nytt inlägg</a></li>
-            <li><a>Mina inlägg</a></li>
-            <li><a>Följande</a></li>
-            <li id="floatRight"><a>Logga in</a></li>
-            <li id="floatRight"><a>Profil</a></li>
-        </ul>
-    </header>
+    <?php require '../templates/header.php'; ?>
 
     <!--Main section-->
     <section>
@@ -73,13 +68,11 @@
         </div>
     </section>
 
-    <!--Footer menu-->
-    <footer>
-        <ul>
-            <li><a>NTI-Södertälje</a></li>
-            <li><a>Om oss</a></li>
-            <li><a>Kontakt</a></li>
-        </ul>
-    </footer>
+
+    <?php 
+    //Ladda in sidfoten
+    require '../templates/footer.php'; 
+    ?>
+
 </body>
 </html>
