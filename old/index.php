@@ -19,7 +19,7 @@
 </head>
 <body>
     <!--Prototyp av index sidan för ett forum av Tim Rundström och Mario Barsum-->
-    <?php require '../templates/header.php'; ?>
+    <?php require 'header.php'; ?>
 
     <!--Main section-->
     <section>
@@ -28,7 +28,8 @@
         <!--Sorting and search form-->
         <form action="" method="get">
             <input type="search" name="searchpost" placeholder="Sök" id="search">
-            <select name="sortBy" id="sortBy">
+            <select name="sortBy"
+             id="sortBy">
                 <option value="latest">Latest</option>
                 <option value="oldest">Oldest</option>
             </select>
@@ -56,7 +57,8 @@
             </a>
         </article>
         
-        <!--Page buttons-->
+        <!--
+            Page buttons-->
         <div class="buttons">
             <a class="previous button">&#8249;</a>
             <a class="number button selected">1</a>
