@@ -73,7 +73,7 @@
                 //välkomstsidan ska visas.
 
                 }
-
+            }
         }
 
         function test_input($data) {
